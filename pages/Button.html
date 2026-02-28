@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/Button.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="HCJ">
+            <div class="HCJb7-demo">
+                <button class="HCJb7-demo-beauty-btn">Click Me</button>                        
+            </div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;button class="beauty-btn"&gt;Click Me&lt;/button&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+<pre class="code">
+.beauty-btn{
+    position:relative;
+    padding:16px 45px;
+    font-size:18px;
+    color:white;
+    background:transparent;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    overflow:hidden;
+    letter-spacing:1px;
+    z-index:1;
+}
+
+/* Animated Gradient Border */
+.beauty-btn::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    padding:3px;
+    border-radius:50px;
+    background:linear-gradient(45deg,#00f5ff,#ff00c8,#00ff88,#ffea00);
+    background-size:300%;
+    animation:moveGradient 5s linear infinite;
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+            mask-composite:exclude;
+    z-index:-1;
+}
+
+/* Inner Background */
+.beauty-btn::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:50px;
+    background:#0f172a;
+    z-index:-2;
+}
+
+/* Hover Effect */
+.beauty-btn:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* Click Effect */
+.beauty-btn:active{
+    transform:scale(0.95);
+}
+
+/* Gradient Animation */
+@keyframes moveGradient{
+    0%{background-position:0%;}
+    100%{background-position:300%;}
+}
+</pre>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="HCJ">
+            <div class="HCJb8-demo">
+                <button class="HCJb8-demo-unique-btn">Hover Me</button>
+            </div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;button class="unique-btn"&gt;Hover Me&lt;/button&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+<pre class="code">
+.unique-btn{
+    position:relative;
+    padding:16px 50px;
+    font-size:18px;
+    font-weight:600;
+    color:#007acc;
+    background:#ffffff;
+    border:2px solid #007acc;
+    border-radius:10px;
+    cursor:pointer;
+    overflow:hidden;
+    letter-spacing:1px;
+    transition:all 0.4s ease;
+    isolation:isolate;
+}
+
+/* Liquid Fill Layer */
+.unique-btn::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg,#00c6ff,#0072ff,#00c6ff);
+    transform:translateY(100%);
+    transition:transform 0.6s cubic-bezier(.77,0,.18,1);
+    z-index:-1;
+}
+
+/* Hover Animation */
+.unique-btn:hover::before{
+    transform:translateY(0);
+}
+
+/* Hover Style */
+/* Hover */
+.unique-btn:hover{
+    color:#ffffff;
+    background:#0072ff;
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.12),
+        0 4px 8px rgba(0,114,255,0.25);
+}
+/* Click Effect */
+.unique-btn:active{
+    transform:scale(0.96);
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+</pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

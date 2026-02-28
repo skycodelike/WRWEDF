@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Learing</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/APILearing.css">
+</head>
+<body>
+    <div id="header"></div>
+    <section class="api-hero">
+    <div class="api-hero-content">
+        <h1>Practice API Fetching with a Free Public API</h1>
+
+        <p>
+            This public API is completely free and designed to help developers 
+            practice real-world data fetching techniques. You can use it in 
+            your projects to learn how APIs work in modern web applications.
+        </p>
+
+        <p>
+            Improve your understanding of REST APIs, HTTP requests, 
+            asynchronous JavaScript, and dynamic content rendering. 
+            Build, test, and experiment without any limitations.
+        </p>
+
+        <p>
+            Perfect for beginners and intermediate developers who want 
+            practical experience with live data integration.
+        </p>
+    </div>
+</section>
+    <main>
+        <div class="header-api">The Dog API</div>
+       <div class="api-section">
+     
+    <div class="api-demo">
+        <div class="HCJA9-container">
+            <h2>Random Dog Image</h2>
+            <img id="HCJA9-dogImage" src="" alt="Dog Image">
+            <br>
+            <button class="HCJA9-unique-btn" onclick="getDog()">Generate</button>
+        </div> 
+    </div>
+
+    <div class="api-code">                   
+        <div class="HCJA9-code-box">
+            <div class="HCJA9-code-box-header">
+                <h1>API</h1>
+                <button class="HCJA9-copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre class="HCJA9-code">https://api.thedogapi.com/v1/images/search</pre>
+            <a  href="https://thedogapi.com/en" class="HCJA9-web-link">More about this API</a>
+        </div>
+    </div>
+
+</div>
+<hr><!-- HCJA10 -->
+<div class="header-api">Pokémon API</div>
+
+<div class="api-section">
+     
+    <div class="api-code">                   
+        <div class="HCJA9-code-box">
+            <div class="HCJA9-code-box-header">
+                <h1>API</h1>
+                <button class="HCJA9-copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <pre class="HCJA9-code">
+https://pokeapi.co/api/v2/pokemon/{id}
+            </pre>
+
+            <a href="https://pokeapi.co/" class="HCJA9-web-link">
+                More about this API
+            </a>
+
+        </div>
+    </div>
+    <div class="api-demo">
+        <div class="HCJA9-container">
+
+            <div class="pokemon-header">
+                <h2 id="pokemonName">POKÉMON</h2>
+                <span id="pokemonId">#000</span>
+            </div>
+
+            <img id="HCJA9-pokemonImage" src="" alt="Pokemon Image">
+
+            <div id="pokemonInfo" class="pokemon-info"></div>
+
+            <button class="HCJA9-unique-btn" onclick="getPokemon()">
+                Pokémon
+            </button>
+
+        </div> 
+    </div>
+
+</div>
+<hr>
+<div class="HCJA11-header-api">Anime Character API</div>
+
+<div class="HCJA11-api-section">
+     
+    <div class="HCJA11-api-demo">
+        <div class="HCJA11-container">
+            <h2>Random Anime Character</h2>
+
+            <img id="HCJA11-animeImage" src="" alt="Anime Character">
+
+            <div id="HCJA11-animeInfo"></div>
+
+            <br>
+            <button class="HCJA11-unique-btn" onclick="getCharacter()">
+                Generate Character
+            </button>
+
+            <div class="HCJA11-code-box">
+                <div class="HCJA11-code-box-header">
+                    <h3>API</h3>
+                    <button class="HCJA11-copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+                <pre class="HCJA11-code">https://api.jikan.moe/v4/characters/{id}</pre>
+                <a href="https://docs.api.jikan.moe/" class="HCJA11-web-link">More about this API</a>
+            </div>
+
+        </div> 
+    </div>
+
+</div>
+
+    </main>
+    <div id="footer"></div>
+<script src="../assets/js/APILearing.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

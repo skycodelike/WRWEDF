@@ -1,0 +1,73 @@
+.HCJ6-demo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.HCJ6-demo-login-container{
+    background:rgb(255, 255, 255);
+    padding:40px;
+    width:350px;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+     color:black;
+}
+
+.HCJ6-demo-login-container h2{
+    text-align:center;
+    margin-bottom:25px;
+    
+}
+
+/* Input Fields */
+.HCJ6-demo-input-group{
+    margin-bottom:20px;
+}
+
+.HCJ6-demo-input-group label{
+    font-size:14px;
+    display:block;
+    margin-bottom:5px;
+}
+
+.HCJ6-demo-input-group input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+    transition:0.3s;
+}
+
+.HCJ6-demo-input-group input:focus{
+    border-color:#2a5298;
+    box-shadow:0 0 5px rgba(42,82,152,0.4);
+}
+
+/* Button */
+.HCJ6-demo-login-btn{
+    width:100%;
+    padding:12px;
+    background:#2a5298;
+    color:rgb(255, 255, 255);
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.HCJ6-demo-login-btn:hover{
+    background:#1e3c72;
+}
+
+/* Extra Links */
+.HCJ6-demo-extra{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+
+.HCJ6-demo-extra a{
+    text-decoration:none;
+    color:#2a5298;
+}

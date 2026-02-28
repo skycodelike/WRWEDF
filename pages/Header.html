@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/Header.css">
+    
+</head>
+<body>
+<div id="header"></div>
+    <div class="HCJ">
+            <div class="HCJ-demo">
+                <div class="HCJh02-demo-header">
+                    <div class="HCJh02-demo-logo">MyWebsite</div>
+
+                    <div class="HCJh02-demo-nav">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>                        
+            </div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;header class="header"&gt;
+    &lt;div class="logo"&gt;MyWebsite&lt;/div&gt;
+
+    &lt;nav class="nav"&gt;
+        &lt;a href="#"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;About&lt;/a&gt;
+        &lt;a href="#"&gt;Services&lt;/a&gt;
+        &lt;a href="#"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+<pre class="code">
+.header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 60px;
+            background-color: #111;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 30px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #00bcd4;
+        }
+
+        .content {
+            padding: 40px;
+        }
+</pre>
+                </div>
+            </div>
+        </div>
+        <hr>
+    <div class="HCJ">
+            <div class="HCJ-demo">
+                <div class="HCJh03-demo-main-header">
+                    <div class="HCJh03-demo-logo">MyWebsite</div>
+                    <div class="HCJh03-demo-nav">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>                        
+            </div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;header class="main-header"&gt;
+    &lt;div class="logo"&gt;MyWebsite&lt;/div&gt;
+
+    &lt;nav class="nav"&gt;
+        &lt;a href="#"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;About&lt;/a&gt;
+        &lt;a href="#"&gt;Services&lt;/a&gt;
+        &lt;a href="#"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+    <pre class="code">
+.main-header{
+    background:white;
+    text-align:center;
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    animation:fadeIn 1s ease;
+}
+
+/* Animated bottom border */
+.main-header::after{
+    content:"";
+    display:block;
+    height:3px;
+    width:0%;
+    background:linear-gradient(90deg,#00bcd4,#2196f3);
+    transition:0.5s;
+}
+
+.main-header:hover::after{
+    width:100%;
+}
+
+/* Logo */
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* Navigation */
+.nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* Hover effect */
+.nav a:hover{
+    color:#2196f3;
+    transform:translateY(-3px);
+}
+
+/* Fade animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+    </pre>
+                </div>
+            </div>
+        </div>
+<div id="footer"></div>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

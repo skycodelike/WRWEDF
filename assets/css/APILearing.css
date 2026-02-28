@@ -1,0 +1,288 @@
+/* Main Layout */
+.header-api{
+    text-align:center;
+    margin-top:10px;
+    font-size:2.5rem;
+}
+
+.api-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    padding:60px 40px;
+    flex-wrap:wrap;
+}
+
+.pokemon-info{
+    color:#000000;
+    margin:10px;
+}
+
+/* Demo Card */
+.HCJA9-container{
+    background:#ffffff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    text-align:center;
+    width:360px;
+}
+
+/* Title */
+.HCJA9-container h2{
+    margin-bottom:20px;
+    color:#222;
+    font-size:20px;
+    font-weight:600;
+}
+
+/* Image */
+.HCJA9-container img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:14px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Button */
+.HCJA9-unique-btn{
+    padding:12px 32px;
+    font-size:15px;
+    font-weight:600;
+    color:#0072ff;
+    background:#ffffff;
+    border:2px solid #0072ff;
+    border-radius:10px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.HCJA9-unique-btn:hover{
+    background:#0072ff;
+    color:#ffffff;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.15),
+        0 4px 12px rgba(0,114,255,0.25);
+}
+
+.HCJA9-unique-btn:active{
+    transform:scale(0.96);
+}
+
+/* Code Box */
+.HCJA9-code-box{
+    background:#ffffff;
+    width:520px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Code Header */
+.HCJA9-code-box-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 20px;
+    background:#212222;
+    border-bottom:1px solid #eee;
+}
+
+.HCJA9-code-box-header h1{
+    font-size:18px;
+}
+
+/* Copy Button */
+.HCJA9-copy-btn{
+    padding:6px 16px;
+    font-size:13px;
+    border:none;
+    background:#0072ff;
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.HCJA9-copy-btn:hover{
+    background:#005ad1;
+}
+
+/* Code Area */
+.HCJA9-code{
+    padding:20px;
+    font-size:1.5rem;
+    overflow:auto;
+    white-space:pre-wrap;
+    color:#fffafa;
+    line-height:1.6;
+    background:#0f0f0f;
+}
+
+.HCJA9-web-link{
+    color:#000000;
+    text-align:center;
+}
+
+/* Hero Section */
+.api-hero{
+    background:#0f0f0f;
+    padding:100px 20px;
+    text-align:center;
+    position:relative;
+}
+
+.api-hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle, rgba(0,114,255,0.15), transparent 70%);
+    filter:blur(80px);
+    z-index:0;
+}
+
+.api-hero-content{
+    max-width:800px;
+    margin:auto;
+    position:relative;
+    z-index:1;
+}
+
+.api-hero-content h1{
+    font-size:42px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+.api-hero-content p{
+    color:#cfcfcf;
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.api-hero-content strong{
+    color:#0072ff;
+}
+
+/* HCJA11 Section */
+.HCJA11-header-api{
+    text-align:center;
+    font-size:40px;
+    padding:30px 0;
+    font-weight:bold;
+    letter-spacing:2px;
+    background:linear-gradient(90deg,#ff00cc,#3333ff);
+}
+
+.HCJA11-api-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.HCJA11-container{
+    background:#111;
+    padding:30px;
+    border-radius:20px;
+    width:400px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(255,0,200,0.3);
+    transition:0.3s;
+}
+
+.HCJA11-container:hover{
+    transform:translateY(-5px);
+}
+
+#HCJA11-animeImage{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:30px;
+    border:3px solid #ff00cc;
+    margin:20px 0;
+}
+
+#HCJA11-animeInfo{
+    margin:15px 0;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.HCJA11-unique-btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#ff00cc,#3333ff);
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+.HCJA11-unique-btn:hover{
+    transform:scale(1.05);
+    box-shadow:
+        0 0 15px #ff00cc,
+        0 0 30px #3333ff;
+}
+
+.HCJA11-code-box{
+    margin-top:30px;
+    background:#111;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,150,255,0.3);
+}
+
+.HCJA11-code-box-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.HCJA11-copy-btn{
+    padding:5px 12px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:#fff;
+    cursor:pointer;
+}
+
+.HCJA11-copy-btn:hover{
+    background:#444;
+}
+
+.HCJA11-code{
+    margin-top:10px;
+    font-size:13px;
+    color:#00ffcc;
+    word-break:break-all;
+}
+
+.HCJA11-web-link{
+    display:inline-block;
+    margin-top:10px;
+    color:#ff00cc;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.HCJA11-web-link:hover{
+    text-decoration:underline;
+}

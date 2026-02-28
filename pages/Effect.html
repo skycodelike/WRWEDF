@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/Effects.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="HCJ">
+            <div class="HCJ13-demo">
+                <h2 class="HCJ13-demo-text">Hover over the text</h2>
+                <p>Hover over the text Effect.</p>                        
+            </div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;h2&gt;Hover over the text&lt;/h2&gt;
+&lt;p&gt;To see the underline slide in from left to right.&lt;/p&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+<pre class="code">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+h2{
+    font-size: 36px;
+    margin: 40px 0;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Underline effect on hover */
+h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #00aaff;
+    transition: width 0.4s ease;
+}
+
+h2:hover::after{
+    width: 100%;
+}
+
+h2:hover{
+    color: #00aaff;
+}
+
+/* Paragraph */
+p{
+    font-size: 18px;
+    color: #ccc;
+    max-width: 600px;
+    text-align: center;
+}
+</pre>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="HCJ">
+            <div class="HCJ12-demo">Scroll Effects</div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;section class=&quot;section&quot;&gt;
+
+    &lt;div class=&quot;card reveal&quot;&gt;
+        &lt;h2&gt;Fade &amp; Slide Animation&lt;/h2&gt;
+        &lt;p&gt;This card demonstrates a smooth fade-in combined with an upward slide when you scroll into view, enhancing the user experience.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card reveal&quot;&gt;
+        &lt;h2&gt;Modern UI Experience&lt;/h2&gt;
+        &lt;p&gt;Subtle scroll animations guide user attention, helping structure content and creating visually appealing interfaces.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card reveal&quot;&gt;
+        &lt;h2&gt;Performance Optimized&lt;/h2&gt;
+        &lt;p&gt;Using Intersection Observer instead of heavy scroll events ensures smooth animations without slowing down the page.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card reveal&quot;&gt;
+        &lt;h2&gt;Interactive Feedback&lt;/h2&gt;
+        &lt;p&gt;Cards animate as users scroll up or down, giving real-time feedback and making the page feel alive and interactive.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card reveal&quot;&gt;
+        &lt;h2&gt;Customizable Animations&lt;/h2&gt;
+        &lt;p&gt;You can easily adjust animation speed, direction, and distance in CSS to match your design style and preferences.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card reveal&quot;&gt;
+        &lt;h2&gt;Engaging Content Flow&lt;/h2&gt;
+        &lt;p&gt;Scroll effects naturally guide the reader’s eye, improving readability and engagement with your content.&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+<pre class="code">
+.section{
+    padding:100px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* ===== CARD STYLE ===== */
+.card{
+    background:#aaa4a4;
+    padding:40px;
+    margin-bottom:60px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    transition:0.6s ease;
+}
+
+/* ===== SCROLL EFFECT ===== */
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>JavaScript</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+<pre class="code">
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("active");
+        } else {
+            // Remove class when element leaves viewport
+            entry.target.classList.remove("active");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+reveals.forEach(reveal => {
+    observer.observe(reveal);
+});
+</pre><br>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div id="footer"></div>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

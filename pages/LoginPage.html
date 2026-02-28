@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/LoginPage.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="HCJ">
+            <div class="HCJ6-demo">
+                <div class="HCJ6-demo-login-container">
+                    <h2>Login</h2>
+
+                    <form>
+                        <div class="HCJ6-demo-input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="HCJ6-demo-input-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+
+                        <button type="submit" class="HCJ6-demo-login-btn">Login</button>
+                    </form>
+
+                    <div class="HCJ6-demo-extra">
+                        <p><a href="#">Forgot Password?</a></p>
+                        <p>Don't have an account? <a href="#">Sign Up</a></p>
+                    </div>
+                </div>                        
+            </div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;div class="login-container"&gt;
+    &lt;h2&gt;Login&lt;/h2&gt;
+
+    &lt;form&gt;
+        &lt;div class="input-group"&gt;
+            &lt;label&gt;Email&lt;/label&gt;
+            &lt;input type="email" placeholder="Enter your email" required&gt;
+        &lt;/div&gt;
+
+        &lt;div class="input-group"&gt;
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;input type="password" placeholder="Enter your password" required&gt;
+        &lt;/div&gt;
+
+        &lt;button type="submit" class="login-btn"&gt;Login&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;div class="extra"&gt;
+        &lt;p&gt;&lt;a href="#"&gt;Forgot Password?&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Don't have an account? &lt;a href="#"&gt;Sign Up&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                        </div>
+<pre class="code">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+.login-container{
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.login-container h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* Input Fields */
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    font-size:14px;
+    display:block;
+    margin-bottom:5px;
+}
+
+.input-group input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-group input:focus{
+    border-color:#2a5298;
+    box-shadow:0 0 5px rgba(42,82,152,0.4);
+}
+
+/* Button */
+.login-btn{
+    width:100%;
+    padding:12px;
+    background:#2a5298;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#1e3c72;
+}
+
+/* Extra Links */
+.extra{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+
+.extra a{
+    text-decoration:none;
+    color:#2a5298;
+}
+</pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

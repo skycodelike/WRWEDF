@@ -1,0 +1,99 @@
+
+/* HCJh02-demo- */
+.HCJh02-demo-header {
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #000000;
+    border:2px solid white;
+    color: white;
+    top: 0;
+    font-family: Arial, sans-serif;
+}
+
+.HCJh02-demo-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.HCJh02-demo-nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.HCJh02-demo-nav a:hover {
+    color: #2bbbce;
+}
+
+/* HCJh03-demo- */
+
+.HCJh03-demo-main-header{
+    background:white;
+    text-align:center;
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    animation:fadeIn 1s ease;
+}
+
+/* Animated bottom border */
+.HCJh03-demo-main-header::after{
+    content:"";
+    display:block;
+    height:3px;
+    width:0%;
+    background:linear-gradient(90deg,#00bcd4,#2196f3);
+    transition:0.5s;
+}
+
+.HCJh03-demo-main-header:hover::after{
+    width:100%;
+}
+
+/* Logo */
+.HCJh03-demo-logo{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:10px;
+    color:#000000;
+}
+
+/* Navigation */
+.HCJh03-demo-nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.HCJh03-demo-nav a{
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* Hover effect */
+.HCJh03-demo-nav a:hover{
+    color:#2196f3;
+    transform:translateY(-3px);
+}
+
+/* Fade animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
