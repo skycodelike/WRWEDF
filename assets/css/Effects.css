@@ -38,3 +38,19 @@ p{
     color: #ccc;
     text-align: center;
 }
+/* text efect on HCJ14 */
+.HCJ14-demo{
+    text-align:center;
+}
+.bounce-text-HCJ14 span {
+  display: inline-block;
+  font-size: 60px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Smooth bounce */
+.bounce-text-HCJ14 span:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
