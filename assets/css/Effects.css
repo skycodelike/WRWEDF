@@ -43,7 +43,6 @@ p{
     text-align:center;
 }
 .bounce-text-HCJ14 span {
-  display: inline-block;
   font-size: 60px;
   color: #fff;
   transition: transform 0.3s ease;
