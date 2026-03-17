@@ -166,3 +166,16 @@ const observer = new IntersectionObserver((entries)=>{
 reveals.forEach(reveal=>{
     observer.observe(reveal);
 });
+// this for HCJ14
+function applyBounceText() {
+  const text = document.getElementById("text-HCJ14");
+
+  if (!text) return;
+
+  text.innerHTML = text.textContent
+    .split("")
+    .map((letter, i) => `<span style="--i:${i}">${letter}</span>`)
+    .join("");
+}
+
+applyBounceText();
