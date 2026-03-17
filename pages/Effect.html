@@ -197,7 +197,55 @@ reveals.forEach(reveal => {
                 </div>
             </div>
         </div>
+<div class="HCJ">
+            <div class="HCJ14-demo">
+                <h1 class="bounce-text-HCJ14" id="text-HCJ14">Web real word element design function</h1>               
+            </div>
+            <div class="HCJ-container-code">
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>HTML</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    </div>
+<pre class="code">
+&lt;h1 class=&quot;bounce-text&quot; id=&quot;text&quot;&gt;Web real word element design function&lt;/h1&gt;
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>CSS</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                    </div>
+<pre class="code">
+.bounce-text span {
+  display: inline-block;
+  font-size: 60px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
 
+/* Smooth bounce */
+.bounce-text span:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+</pre>
+                </div>
+                <div class="code-box">
+                    <div class="code-box-header">
+                        <h1>JavaScript</h1>
+                        <button class="copy-btn" onclick="copyCode(this)">Copy !</button>
+                    </div>
+<pre class="code">
+const text = document.getElementById("text");
+text.innerHTML = text.textContent
+  .split("")
+  .map((letter, i) => `<span style="--i:${i}">${letter}</span>`)
+  .join("");
+</pre>
+                </div>
+            </div>
+        </div>
     </main>
     <div id="footer"></div>
 <script src="../assets/js/main.js" defer></script>
