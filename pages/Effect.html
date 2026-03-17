@@ -218,16 +218,14 @@ reveals.forEach(reveal => {
                     </div>
 <pre class="code">
 .bounce-text span {
-  display: inline-block;
   font-size: 60px;
-  color: #fff;
   transition: transform 0.3s ease;
 }
 
 /* Smooth bounce */
 .bounce-text span:hover {
-  color: #00ffcc;
-  text-shadow: 0 0 10px #00ffcc;
+color: #00a86b;
+text-shadow: 0 0 8px rgba(0, 168, 107, 0.4);
 }
 </pre>
                 </div>
@@ -240,10 +238,10 @@ reveals.forEach(reveal => {
 const text = document.getElementById("text");
 text.innerHTML = text.textContent
   .split("")
-  .map((letter, i) => `<span style="--i:${i}">${letter}</span>`)
+  .map((letter, i) => `&lt;span style="--i:${i}"&gt;${letter}&lt;/span&gt;`)
   .join("");
 </pre>
-                </div>
+            </div>
             </div>
         </div>
     </main>
